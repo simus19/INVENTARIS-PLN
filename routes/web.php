@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ProdiController;
+use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+// Route::get('/about', function () {
+//     return view('about');
+// })->name('about');
+
+Route::auto('/admin/role', RoleController::class);
+Route::auto('/admin/menu', MenuController::class);
+Route::auto('/admin/user', UserController::class);

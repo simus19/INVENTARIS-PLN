@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('main-content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-9">
             <div class="card o-hidden border-0 shadow-lg my-5">
@@ -54,5 +54,58 @@
             </div>
         </div>
     </div>
+</div> --}}
+
+<img style="width: 100px;" class="" src="{{ url('img/uin.png') }}" alt="">
+<h1 class="mt-5 text-dark display-4">Reset Password </h1>
+
+<div class="container">
+    @if ($errors->any())
+        <div class="alert alert-danger border-left-danger" role="alert">
+            <ul class="pl-4 my-2">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    <form method="POST" action="{{ route('password.update') }}" class="user">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="token" value="{{ $token }}">
+        {{-- @csrf --}}
+        <div class="main">
+            <div class="w-100">
+              <div class="text-field">
+                <input type="email" placeholder="..." name="email" value="{{ $email ?? old('email') }}" required autofocus>
+                <label>E-mail:</label>
+              </div>
+            </div>
+          
+            <div class="w-100">
+              <div class="text-field">
+                <input type="password" placeholder="..." name="password" placeholder="{{ __('Password') }}" required>
+                <label>Password:</label>
+              </div>
+            </div>
+            
+            <div class="w-100">
+              <div class="text-field">
+                <input type="password" placeholder="..." name="password_confirmation" placeholder="{{ __('Confirm Password') }}" required>
+                <label>Confirm Password:</label>
+              </div>
+            </div>
+        </div>
+
+        <div class="button-field">
+            <button type="submit">
+              Reset Password
+            </button>
+        </div>
+
+        <div class="" style="margin-top: 40px">
+            {{-- <span style="font-size: 16px; margin-top: 15px;">New Here? <a href="{{ route('register') }}" style="color: #bc032f">Create Account</a></span> --}}
+        </div>
+
+    </form>
 </div>
 @endsection
