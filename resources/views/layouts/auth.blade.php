@@ -19,7 +19,7 @@
     <link href="{{ url('css/auth.css') }}" rel="stylesheet">
 
     <!-- Favicon -->
-    <link href="{{ url('img/logo-img.png') }}" rel="icon" type="image/png">
+    <link href="{{ url('img/PLN.png') }}" rel="icon" type="image/png">
 
     <style>
         
@@ -38,8 +38,8 @@
                 </div>
 
             </div>
-            <div class="col-lg-8  d-flex align-items-center justify-content-center" style="background-color: #021C60; ">
-                <img class="d-none d-lg-block" src="{{ url('img/e-lab-logo.png') }}" alt="" style="width: 50%">
+            <div class="col-lg-8  d-flex align-items-center justify-content-center bg-primary ">
+                <img class="d-none d-lg-block" src="{{ url('img/Logo_PLN.png') }}" alt="" style="width: 50%">
             </div>
         </div>
     </main>

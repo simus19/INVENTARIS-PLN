@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('main-content')
-<img style="width: 100px;" class="" src="{{ url('img/uin.png') }}" alt="">
+<img style="width: 100px;" class="" src="{{ url('img/PLN.png') }}" alt="">
 <h1 class="mt-5 text-dark display-4">Reset Password </h1>
 
 <div class="container">

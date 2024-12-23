@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('main-content')
-<img style="width: 100px;" class="" src="{{ url('img/uin.png') }}" alt="">
+<img style="width: 100px;" class="" src="{{ url('img/PLN.png') }}" alt="">
 <h1 class="mt-5 text-dark display-4">Login </h1>
 
 <div class="container">
@@ -49,9 +49,9 @@
             </button>
         </div>
 
-        <div class="" style="margin-top: 40px">
+        {{-- <div class="" style="margin-top: 40px">
             <span style="font-size: 16px; margin-top: 15px;">New Here? <a href="{{ route('register') }}" style="color: #bc032f">Create Account</a></span>
-        </div>
+        </div> --}}
 
     </form>
 </div>

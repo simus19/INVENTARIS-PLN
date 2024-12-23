@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{ url('vendor/toastr/toastr.min.css') }}">
 
     <!-- Favicon -->
-    <link href="{{ url('img/logo-img.png') }}" rel="icon" type="image/png">
+    <link href="{{ url('img/PLN.png') }}" rel="icon" type="image/png">
 
     @stack('css')
 </head>
@@ -40,7 +40,7 @@
          <!-- Sidebar - Brand -->
          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon">
-                <img style="width: 60px" class="" src="{{ url('img/logo-img.png') }}" alt="">
+                <img style="width: 100px" class="" src="{{ url('img/Logo_PLN.png') }}" alt="">
             </div>
             {{-- <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> --}}
         </a>
@@ -344,7 +344,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; simax1721 2023 - {{ now()->year }}</span>
+                    <span>Copyright &copy; muslem_1405 2023 - {{ now()->year }}</span>
                 </div>
             </div>
         </footer>
